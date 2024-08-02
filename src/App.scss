@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  text-align: center;
+  .cakeContainer {
+    form {
+      .input {
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        box-shadow: 0px 0px 7px 2px rgba(208, 208, 208, 0.764);
+        width: 250px;
+        padding: 8px 15px;
+        margin-right: 20px;
+        transition: all 0.3s ease;
+        &:focus {
+          box-shadow: 0px 0px 0px 0px transparent;
+          border: solid 2px rgba(0, 87, 194, 0.361);
+          transform: scale(1.04);
+          transition: all 0.3s ease;
+          background: rgb(230, 253, 255);
+          color: rgb(112, 112, 112);
+        }
+      }
+
+      .submit {
+        padding: 5px 8px;
+        box-shadow: 0px 0px 5px 2px rgba(208, 208, 208, 0.764);
+        border: solid 4px rgba(192, 192, 192, 0.299);
+        border-radius: 5px;
+        transition: all 0.5s ease;
+        margin-right: 10px;
+        margin-top: 20px;
+      }
+      .submit2 {
+        padding: 5px 8px;
+        // box-shadow: 0px 0px 3px 3px #80ff9c;
+        border: solid 1px #00d1d1;
+        outline: solid 1px #00c8c8;
+        outline-offset: 3px;
+        border-radius: 5px;
+        color: rgb(61, 215, 0);
+        background-color: #ffffff;
+        transition: all 0.5s ease;
+        margin-left: 15px;
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: 0px 0px 5px 3px #42c55e93;
+          border: solid 4px #5be27993;
+          border-radius: 5px;
+          color: rgb(255, 255, 255);
+          background-color: #00d400;
+          transition: all 0.3s ease;
+        }
+      }
+      .showError {
+        font-size: 10px;
+        margin-top: 10px;
+        color: rgb(158, 164, 46);
+      }
+      .showError2 {
+        font-size: 10px;
+        margin-top: 10px;
+        color: red;
+      }
+    }
+    .loading {
+      margin: 20px 0px;
+    }
+    .Shelf {
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+      width: 450px;
+      height: 400px;
+      line-height: 50px;
+      padding-left: 20px;
+      padding-top: 12px;
+      background: url("../public/images/cakeShelf.jpg") no-repeat;
+      background-size: cover;
+
+      .cakeShelf {
+        width: 50%;
+      }
+
+      .iceCreamShelf {
+        width: 50%;
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 2rem;
+      }
+    }
+
+    audio {
+      display: none;
+    }
+  }
+}
