@@ -155,6 +155,7 @@ const CakeContainer = (props) => {
     setTimeout(() => {
       if (audio2Ref.current) audio2Ref.current.play();
       setSuccess(true);
+      setSuccessForIceCream(false);
       setLoading(false);
       props.buyCake(number);
     }, 3000);
@@ -254,3 +255,4 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer);
+//? 🍱
